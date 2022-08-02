@@ -1,0 +1,36 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:wght@300;400;500;600&display=swap');
+@import 'libs/slick';
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/button';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
+@import 'blocks/upmenu';
+@import 'blocks/about';
+@import 'blocks/advantages';
+@import 'blocks/portfolio';
+@import 'blocks/catalog';
+@import 'blocks/action';
+@import 'blocks/faq';
+@import 'blocks/contacts';
+@import 'blocks/pageup';
+@import 'blocks/carousel';
+@import 'blocks/calender';
+@import 'blocks/modal';
+@import 'blocks/media';

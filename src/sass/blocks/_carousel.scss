@@ -1,0 +1,108 @@
+.carousel {
+padding: 120px 0;
+&__link {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    a {
+        color: $main-color;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+&__inner {
+    padding-top: 40px;
+    position: relative;
+    width: 950px;
+    margin: 0 auto;
+    img {
+        height: 400px;
+    }
+    div {
+        margin: 0 10px;
+    }
+}
+.general-slider .item{
+    margin: 0 10px;
+    opacity: 0.5;
+    transition:opacity .3s ease .5s
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.general-slider .item.slick-active{
+    opacity: 1;
+    transition:opacity 0s 0s;
+}
+.slick-slide {
+    height: 400px !important;
+    
+    img {
+      margin: 0;
+      padding: 0;
+      display: block;
+      height: 100%;
+    }
+  }
+.slick-prev, .slick-next  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -66px;
+    border: none;
+    background-color: #fff;
+    img {
+        width: 35px;
+        height: 35px;
+    }
+    &:active, &:focus {
+        outline: none;
+    }
+}
+.slick-next  {
+    right: -66px;
+    left: auto;
+    &:active, &:focus {
+        outline: none;
+    }
+}
+.slick-dots button {
+    width: 10px;
+    height: 10px;
+    background-color: #b3b3b3;
+    border-radius:50%;
+    font-size:0px; // This step is very important to hide the numbers
+    border:0; 
+    &:active, &:focus, &:visited {
+        outline: none;
+    }
+}
+.slick-dots .slick-active button
+{
+  background-color: $main-color;
+  width: 13px;
+  height: 13px;
+  &:active, &:focus, &:visited {
+    outline: none;
+}
+}
+.slick-dots .slick-visited button
+{
+    outline: none;
+    &:active, &:focus, &:visited {
+    outline: none;
+}
+}
+ul.slick-dots{
+    list-style-type: none;  
+}
+.slick-dots {
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 280px;
+}
+}

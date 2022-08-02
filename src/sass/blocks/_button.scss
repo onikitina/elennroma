@@ -1,0 +1,37 @@
+.btn {
+    height: 67px;
+    background: $main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 20px 30px;
+    font-weight: 400;
+}
+
+.btn-black {
+    height: 67px;
+    background: none;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 20px 35px;
+    font-weight: 400;
+}
+
+.btn-white {
+    height: 91px;
+    width: 305px;
+    background: none;
+    border: 1px solid #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 30px 45px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.btn-small {
+    height: 36px;
+    background: $main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 6px 40px;
+}
+

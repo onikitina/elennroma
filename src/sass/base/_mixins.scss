@@ -1,0 +1,12 @@
+@mixin before_glitter {
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -240%;
+        left: 0;
+        width: 298px;
+        height: 267px;
+        background: url('../icons/glittermain.png') no-repeat 50%/cover;
+    }
+}

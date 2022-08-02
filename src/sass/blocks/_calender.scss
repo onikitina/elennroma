@@ -1,0 +1,160 @@
+.calender {
+    padding: 100px 0;
+    &__wrapper {
+        width: calc(100% - 130px);
+        display: grid;
+        grid-template-columns: auto 400px;
+        column-gap: 15px;
+    }
+    img {
+        width: 100%;
+        height: 470px;
+        object-fit: cover;
+    }
+    &__subtitle {
+        padding: 0;
+        width: 100%;
+        text-align: left;
+    }
+    &__link {
+        color: $main-color;
+        &:hover, &:visited {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+    &__text {
+        margin-top: 10px;
+        text-align: left;
+    }
+    &__busy {
+        margin-top: 30px;
+        color: $main-color;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 400;
+        text-align: left;
+        font-size: 20px;
+    }
+    &__form {
+        min-height: 470px;
+        padding: 20px 20px;
+        width: 400px;
+        display: grid;
+        grid-template: 45px 45px 45px minmax(45px, auto) / 1fr;
+        justify-content: space-between;
+        row-gap: 27px;
+        background: $main-color;
+        label {
+            display: block;
+            position: absolute;
+            top: -9px;
+            left: 12px;
+            height: 18px;
+            padding: 0 8px;
+            background-color: $main-color;
+            font-size: 12px;
+            color: #fff;
+            margin-bottom: 0;
+        }
+    }
+    &__textarea {
+        position: relative;
+        textarea {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            font-size: 12px;
+            resize: none;
+            background: $main-color;        
+            border: 1px solid #fff;
+            color: #fff;
+            &:active, &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__triggers {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    &__policy {
+        width: 200px;
+        margin: 0 auto;
+        line-height: 18px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        input {
+            margin-right: 10px;
+        }
+        a {
+            color:#fff;
+        }
+    }
+    &__input {
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            font-size: 12px;
+            background: $main-color;        
+            border: 1px solid #fff;
+            color: #fff;
+            &:active, &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__btn {
+        max-width: 220px;
+        margin: 0 auto;
+        height: 45px;
+        background: none;
+        border: 1px solid #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        padding: 12px 26px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 21px;
+        &:active, &:focus {
+            outline: none;
+        }
+    }
+}
+/* Responsive iFrame */
+
+.googleCalendar {
+    position: relative;
+    height: auto;
+    width: calc(100% - 130px);
+    padding-bottom: 40%;
+    margin-top: 15px;
+    border: 2px solid $main-color;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__mobile {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 100%;
+        padding-top: 10px;
+        margin-top: 5px;
+        border: 2px solid $main-color;
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+    }
+  }

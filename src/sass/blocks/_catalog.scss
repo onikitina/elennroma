@@ -1,0 +1,121 @@
+.catalog {
+    padding-top: 120px;
+    &-title {
+        text-align: center;
+    }
+    &__tabs {
+        margin-top: 42px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    &__tab {
+        width: 225px;
+        height: 50px;
+        border: 2px solid $main-color;
+        color: #000;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 48px;
+        transform: skewX(-25deg);
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }
+        div {
+            transform: skewX(25deg);
+        }
+        &_active {
+            color: #fff;
+            background-color: $main-color;
+            border: none;
+        }
+    }
+    &__content {
+        margin-top: 40px;
+        display: none;
+        &_active {
+            display: grid;
+            grid-template: auto / repeat(3, 325px);
+            grid-auto-rows: auto;
+            gap: 24px;
+            justify-content: center;
+        }
+    }
+    &-item {
+        background: rgba(176, 81, 66, 0.2);
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__big, &__small {
+            display: grid;
+            grid-template-rows: 80px auto;
+            grid-auto-rows: auto;
+        }
+        &__subtitle {
+            margin: 20px;
+            color: $main-color;
+            text-align: center;
+            font-weight: 700;
+        }
+        &__descr {
+            color: #000;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 300;
+        }
+        &__price {
+            color: $main-color;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 20px auto 0 auto;
+            align-self: baseline;
+            &-min {
+                text-align: right;
+                color: $main-color;
+                font-size: 16px;
+                font-weight: 700;
+                align-self: center;
+            }
+        }
+        &__wrapper {
+            margin: 10px;
+            display: grid;
+            grid-template-columns: auto 110px;
+            justify-content: space-between;
+        }
+        &__list {
+            position: relative;
+            padding-right: 10px;
+            padding-left: 44px;
+            margin-bottom: 0;
+            list-style-type: none;
+            li {
+                position: relative;
+                color: #000;
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 300;
+                margin-bottom: 10px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    left: -14px;
+                    top: 7px;
+                }
+            }
+        }
+    }
+}

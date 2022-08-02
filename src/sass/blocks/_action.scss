@@ -1,0 +1,37 @@
+.action {
+    padding-top: 120px;
+    .container {
+        position: relative;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 98px;
+        padding: 40px 48px 0 38px;
+        width: 1041px;
+        height: 870px;
+        background: $main-color;
+        z-index: -1;
+    }
+    &__subtitle {
+        color: #fff;
+        width: 570px;
+    }
+    &__image {
+        position: absolute;
+        left: 34px;
+        top: 171px;
+        img {
+            width: 1082px;
+        }
+    }
+    &__btn {
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__link {
+        margin-top: 35px;
+    }
+}

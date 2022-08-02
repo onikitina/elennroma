@@ -1,0 +1,26 @@
+.advantages {
+    margin: 120px auto 0 auto;
+    min-height: 572px;
+    background: rgba(176, 81, 66, 0.2);
+    &__wrapper {
+        padding-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 310px);
+        justify-content: space-between;
+    }
+    &__item {
+        img {
+            display: block;
+            margin: 0 auto; 
+            height: 80px;
+        }
+    }
+    &__title {
+        margin-top: 35px;
+        text-align: center;
+    }
+    &__text {
+        margin-top: 25px;
+        text-align: center;
+    }
+}

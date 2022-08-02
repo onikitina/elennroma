@@ -1,0 +1,101 @@
+.faq {
+    padding-top: 140px;
+    &__subtitle {
+        width: 100%;
+    }
+    &__accordeon {
+        margin: 40px 270px 0 380px;
+    }
+    &__list {
+        margin: 60px 0;
+        overflow: hidden;
+        padding: 0;
+        span {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+            margin: 20px 20px 20px 35px;
+        }
+        li {
+            list-style-type: none;
+            padding: 0;
+        }
+        &-heading {
+            padding: 10px 10px 10px 35px;
+            border: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 0;
+            background: #fff;
+            cursor: pointer;
+            display: block;
+            outline: none;
+            position: relative;
+            width: 100%;
+            text-align: left;
+            &:before {
+                background: $main-color;
+                content: '';
+                height: 2px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%) rotate(-90deg);
+                transition: all 0.3s ease-in-out;
+                width: 20px;
+            }
+            &:after {
+                background: $main-color;
+                content: '';
+                height: 2px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 20px;
+                transform: translateY(-50%)
+            }
+            &:hover {
+                border: none;
+                box-shadow: none;
+                outline: none;
+                span {
+                    position: relative;
+                    color: $main-color;   
+                } 
+            }
+            &:active, &:focus {
+                border: none;
+                box-shadow: none;
+                outline: none;
+                span {
+                    position: relative;
+                    color: $main-color;   
+                }
+            }
+            &:visited {
+                span {
+                    position: relative;
+                    color: #000;   
+                }
+            }
+            &_active {
+                &:before {
+                    transform: rotate(0deg);
+                    }
+            }
+        }
+        &-text {
+            background: #fff;
+            display: none;
+            overflow: hidden;
+        }
+    }
+}

@@ -14,13 +14,13 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'external-smtp.1gb.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'yolic';                 // Наш логин
-$mail->Password = 'geyssjztlcnrmapn';                           // Наш пароль от ящика
+$mail->Username = 'example';                 // Наш логин
+$mail->Password = 'example';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 10017;                                    // TCP port to connect to
  
-$mail->setFrom('yolic@yandex.ru', 'Elennroma');   // От кого письмо 
-$mail->addAddress('yolic@yandex.ru');     // Add a recipient
+$mail->setFrom('example', 'Elennroma');   // От кого письмо 
+$mail->addAddress('example');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');

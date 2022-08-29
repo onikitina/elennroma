@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Host: elennroma.ru
+Sitemap: http://elennroma.ru/sitemap.xml

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>http://elennroma.ru/calender.html</loc>
+</url>
+<url>
+  <loc>http://elennroma.ru/index.html#about</loc>
+</url>
+<url>
+  <loc>http://elennroma.ru/index.html#portfolio</loc>
+</url>
+<url>
+  <loc>http://elennroma.ru/index.html#price</loc>
+</url>
+<url>
+  <loc>http://elennroma.ru/index.html#contacts</loc>
+</url>
+<url>
+  <loc>http://elennroma.ru/wedding.html</loc>
+</url>
+<url>
+  <loc>http://elennroma.ru/event.html</loc>
+</url>
+<url>
+  <loc>http://elennroma.ru/photo.html</loc>
+</url>
+<url>
+  <loc>http://elennroma.ru/policy.html</loc>
+</url>
+<url>
+  <loc>http://elennroma.ru/index.html</loc>
+</url>
+</urlset>
